@@ -42,7 +42,92 @@
         </nav>
     </header>
     <main>
-
+        <section>
+            <h2>
+                Contact Us
+            </h2>
+            <form action="" method="post">
+                <label for="username">
+                    Name:
+                </label>
+                <input type="text" id="username" name="username" placeholder="Enter your Username">
+                <br>
+                <!-- Label and email input field-->
+                <label for="email">
+                    Email:
+                </label>
+                <input type="email" id="email" name="email" placeholder="exmple@exmple.com">
+                <br>
+                <!-- Dropdown select for country selection-->
+                <label for="country">
+                    Subject
+                </label>
+                <select name="country" id="country">
+                    <option value="usa">
+                        USA
+                    </option>
+                    <option value="canada">
+                        Canada
+                    </option>
+                    <option value="mexico">
+                        Mexico
+                    </option>
+                    <option value="el_salvador">
+                        El Salvador
+                    </option>
+                    <option value="guatemala">
+                        Guatemala
+                    </option>
+                    <option value="cuba">
+                        Cuba
+                    </option>
+                </select>
+                <br>
+                <!-- Textarea for additional comments -->
+                <label for="comments">
+                    comments
+                </label>
+                <textarea name="comments" id="comments" rows="4" cols="50">
+                <!-- This creates the comment box-->
+                </textarea>
+                <br>
+                <!-- Hidden input field (not visible to users) -->
+                <input type="hidden" name="userId" id="userId" value="12345">
+                <br>
+                <!-- Submit button to submit the form -->
+                <input type="submit" value="submit">
+                <!-- Reset button to reset the form fields -->
+                <input type="reset" value="reset">
+            </form>
+        </section>
+        <section>
+            <h4>
+                Visit
+            </h4>
+            <p>
+                If you would like to visit us at our current Address: 
+            </p>        
+            <address>
+                1253 Hawthorn St <br>
+                Hanford, Ca 93230
+            </address>
+            <h4>
+                Call Us
+            </h4>
+            <p> If you have any questions or comments you could speak with us live. <br>     Phone:      
+                <a href="tel:3238132323">
+                    (323)813-2323
+                </a>
+            </p>
+            <h4>
+                Email Us
+            </h4>
+            <p>Or you may contact us by <br> Email: 
+                <a href="mailto:inquires@jobbainc.com">
+                    inquires@jobbainc.com
+                </a>
+            </p>
+        </section>
     </main>
     <footer>
         <p>
