@@ -33,7 +33,19 @@ body{
     margin: 0;
     padding: 0;
 }
-
+.homesubmenu{
+    height: 50px;
+    width: 50px;
+    font-size: 1.1rem;
+    padding: 0;
+    top: -150px;
+    left: 50;
+    z-index: -1;    
+}
+.homesub:checked ~ .homesubmenu{
+    top: 50px;
+    opacity: 0.5;
+}
 .nav-toggle{
     display: none;
 }
@@ -112,17 +124,11 @@ nav a:hover{
 
 .nav-toggle:checked ~ nav a{
     opacity: 1;
-    transition: opactity 250ms ease-in-out 250ms;
+    transition: opacity 250ms ease-in-out 250ms;
 }
 
-.nav-toggle:checked ~ nav{
-    transform: scale(1,1);
-}
 
-.nav-toggle:checked ~ nav a{
-    opacity: 1;
-    transition: opactity 250ms ease-in-out 250ms;
-}
+
 
 
 
@@ -134,7 +140,7 @@ footer{
     bottom: 0;
     left: 0;
     right: 0;
-    height: 50px;
+    height: 100px;
     text-align: center;
 }
 
@@ -160,7 +166,6 @@ footer{
     display: flex;
     justify-content: flex-end;
 }
-
 nav li{
     margin-left: 3em;
     margin-bottom: 0;
@@ -185,6 +190,28 @@ nav a::before{
 nav a:hover{
     transform: scale(1,1);
 }
+}
+.inside-nav-home{
+    display: none;
+}
+.inside-nav-home{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+.inside-nav-home:checked ~ nav{
+    transform: scale(1,1);
+}
+
+.inside-nav-home:checked ~ nav a{
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 250ms;
 }
 table {
     border-collapse: collapse;
